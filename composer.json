@@ -1,0 +1,52 @@
+{
+  "name": "flux-eco/dot-env",
+  "description": "Loads .env-Files",
+  "version": "1.0.0",
+  "type": "flux-app",
+  "keywords": [
+    "flux-eco",
+    "dot-env",
+    "fluxlabs"
+  ],
+  "homepage": "https://fluxlabs.ch",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "fluxlabs ag",
+      "email": "support@fluxlabs.ch",
+      "homepage": "https://fluxlabs.ch",
+      "role": "Developer"
+    }
+  ],
+  "support": {
+    "email": "support@fluxlabs.ch"
+  },
+  "require": {
+    "php": ">=8.0"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "files": [
+      "fn/loadDotEnv.php"
+    ],
+    "psr-4": {
+      "FluxEco\\DotEnv\\": [
+        "src/"
+      ],
+      "fluxy\\": [
+        "fn/"
+      ]
+    }
+  },
+  "config": {
+    "classmap-authoritative": true,
+    "optimize-autoloader": true,
+    "sort-packages": true,
+    "platform-check": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    }
+  }
+}
