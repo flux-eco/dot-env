@@ -1,7 +1,7 @@
 {
   "name": "flux-eco/dot-env",
   "description": "Loads .env-Files",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "flux-app",
   "keywords": [
     "flux-eco",
@@ -35,7 +35,7 @@
       "FluxEco\\DotEnv\\": [
         "src/"
       ],
-      "fluxy\\": [
+      "fluxDotEnv\\": [
         "fn/"
       ]
     }

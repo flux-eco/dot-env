@@ -7,10 +7,10 @@ Loads .env-Files
 .env-File
 
 ```
-MYSQL_HOST=localhost
-MYSQL_DATABASE=projection
-MYSQL_USER=emmett
-PASSWORD=fluxcapacitor
+STORAGE_HOST=localhost
+STORAGE_NAME=projection
+STORAGE_USER=emmett
+STORAGE_PASSWORD=fluxcapacitor
 ```
 
 loadAndPrint.php
@@ -22,8 +22,8 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 FluxEco\DotEnv\Api::new()->load(__DIR__);
 
-echo getenv('MYSQL_USER').PHP_EOL;
-echo getenv('PASSWORD').PHP_EOL;
+echo getenv('STORAGE_USER').PHP_EOL;
+echo getenv('STORAGE_PASSWORD').PHP_EOL;
 ```
 
 output
@@ -40,7 +40,10 @@ fluxcapacitor
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
-fluxy\loadDotEnv(__DIR__);
+fluxDotEnv\loadDotEnv(__DIR__);
+
+echo getenv('STORAGE_USER').PHP_EOL;
+echo getenv('STORAGE_PASSWORD').PHP_EOL;
 ```
 
 ## Contributing :purple_heart:

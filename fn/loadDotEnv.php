@@ -1,6 +1,6 @@
 <?php
 
-namespace fluxy;
+namespace fluxDotEnv;
 
 use FluxEco\DotEnv\Api;
 
